@@ -1,0 +1,285 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-out;
+}
+
+header {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s;
+    animation: fadeIn 2s ease-out;
+}
+
+header.scrolled {
+    background-color: #333;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-out;
+}
+
+nav {
+    float: right;
+    padding: 10px;
+    animation: fadeIn 2s ease-out;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ff6600;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+    background: url('fakfak-1.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+    background-size: 300% 300%;
+    color: rgb(17, 17, 17);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.5s ease;
+    animation: gradientAnimation 5s ease infinite;
+    border: 2px solid black;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero .btn:hover {
+    background-color: #e65c00;
+}
+
+.about, .services, .contact, .audio-video, .news {
+    padding: 60px 0;
+    text-align: center;
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
+}
+
+.about h2, .services h2, .contact h2, .audio-video h2, .news h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p, .services p, .contact p, .audio-video p, .news p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.services .service, .audio-video .media, .news article {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #f76401;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #00ffff);
+    background-size: 400% 400%;
+    color: #f4f3f3;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out, backgroundColorChange 15s infinite;
+}
+
+@keyframes backgroundColorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.biodata-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    animation: borderColorChange 5s infinite;
+}
+
+.foto-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    animation: borderColorChange 5s infinite;
+}
+
+@keyframes borderColorChange {
+    0% {
+        border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, #00ff00, #0000ff, #ff0000);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    }
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.biodata-table th, .biodata-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.biodata-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 5s ease-out;
+}

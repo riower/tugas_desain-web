@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fak-Fak City.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Fak-Fak City.com</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Profil</a></li>
+                    <li><a href="#audio-video">Audio Video</a></li>
+                    <li><a href="#news">Berita</a></li>
+                    <li><a href="#contact">Profil Pembuat Web</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Selamat Datang di Fak-Fak City.com</h1>
+            <p>Kota Fak-Fak, kota yang penuh dengan keindahan alam dan budaya yang kaya.</p>
+            <a href="https://fakfakkab.go.id/" class="btn">Informasi Lebih Lanjut</a>
+            <a href="Kontak.html" class="btn">Berlangganan</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Profil Kota Fak-Fak</h2>
+            <div class="profile-content">
+                <img src="download (7).jpeg" alt="Gambar Kota Fak-Fak" class="profile-image">
+                <div class="profile-text">
+                    <p>Kota Fak-Fak terletak di Provinsi Papua Barat, Indonesia. Kota ini dikenal dengan julukan "Kota Pala" karena produksi buah pala yang melimpah. Selain itu, Fak-Fak juga memiliki berbagai destinasi wisata alam yang menakjubkan.</p>
+                    <p>Fak-Fak memiliki sejarah yang kaya dan budaya yang beragam. Kota ini juga merupakan pintu gerbang ke berbagai destinasi wisata di Papua Barat, termasuk pantai-pantai yang indah dan pegunungan yang menakjubkan.</p>
+                    <p>Dengan keramahan penduduknya dan keindahan alamnya, Fak-Fak adalah tempat yang sempurna untuk dikunjungi dan dijelajahi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="audio-video" class="audio-video">
+        <div class="container">
+            <h2>Audio Video</h2>
+            <div class="media">
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="Willy Salakay - SA ANAK FAKFAK MO - ( OFFICIAL VIDEO LIRIK ).mp3" type="audio/mpeg">
+                </audio>
+                <p>Willy Salakay - SA ANAK FAKFAK MO</p>
+            </div>
+            <div class="media">
+                <h3>Video</h3>
+                <video controls width="600">
+                    <source src="videoplayback.mp4" type="video/mp4">
+                </video>
+                <p>Trailer Flim Satu Tungku Tiga Batu</p>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="news">
+        <div class="container">
+            <h2>Berita</h2>
+            <p>Berita terbaru dari Kota Fak-Fak:</p>
+            <div class="news-grid">
+                <article>
+                    <img src="paskibra ffl.jpg" alt="Paskibraka Fakfak" class="news-image">
+                    <div class="news-content">
+                        <h3>Jelang Upacara 17 Agustus, Paskibraka Fakfak Papua Barat Intens Berlatih Meski Cuaca Tak Menentu</h3>
+                        <p>Menjelang Upacara HUT ke-79 Republik Indonesia (RI) 17 Agustus 2024, kesiapan Paskibraka tingkat Kabupaten Fakfak mencapai 65 persen di Stadion 16 November Fakfak Papua Barat. <a href="https://papuabarat.tribunnews.com/2024/07/26/jelang-upacara-17-agustus-paskibraka-fakfak-papua-barat-intens-berlatih-meski-cuaca-tak-menentu">Baca selengkapnya</a></p>
+                    </div>
+                </article>
+              
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="profile">
+        <div class="container">
+            <h2>Profil Pembuat Web</h2>
+            <div class="biodata-container">
+                <div class="image-container">
+                    <img src="foto.jpg" alt="Gambar Pembuat Web" id="profile-image">
+                </div>
+                <div class="text-container">
+                    <h2>Biodata</h2>
+                    <table class="biodata-table" id="biodata-table">
+                        <tr>
+                            <th>Nama:</th>
+                            <td>Paulus Rosario Hegemur</td>
+                        </tr>
+                        <tr>
+                            <th>TTL:</th>
+                            <td>Jayapura, 30 - 05 - 2003</td>
+                        </tr>
+                        <tr>
+                            <th>Status:</th>
+                            <td>Mahasiswa</td>
+                        </tr>
+                        <tr>
+                            <th>Universitas</th>
+                            <td>Politeknik Negeri Fak-Fak</td>
+                        </tr>
+                        <tr>
+                            <th>Prodi:</th>
+                            <td>Manajemen Informatika</td>
+                        </tr>
+                    </table>
+                    <p>Nama saya Paulus Rosario Hegemur, seorang mahasiswa Manajemen Informatika di Politeknik Negeri Fak-Fak.</p>
+                    <p>Alasan saya membuat web ini adalah untuk memenuhi tugas mata kuliah Desain Web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>@Fak-Fak City.com by. Paulus R,H </p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.container, header, .logo, nav, .hero, .about, .services, .contact, .audio-video, .news, footer, .biodata-container, .image-container, .text-container, .biodata-table');
+
+            function checkScroll() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('scroll-in');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', checkScroll);
+            checkScroll();
+
+            // Tambahkan fungsi scroll ke bawah
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

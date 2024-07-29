@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes colorChange {
+            0% { background-color: #74ABE2; }
+             25% { background-color: #5563DE; }
+            50% { background-color: #A674E2; }
+            75% { background-color: #E274AB; }
+            100% { background-color: #74ABE2; }
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: colorChange 10s infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            animation: fadeIn 2.5s ease-out 2.5s forwards;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .social-icons li {
+            display: inline;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #555;
+            font-size: 28px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #222;
+            transform: scale(1.1);
+        }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #141414;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #f2ebeb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kontak Saya</h1>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100074285834559" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/paulushgmur" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        
+        <div>
+            <p>Scan QR Code ini untuk mengirim pesan WhatsApp ke saya:</p>
+            <img src="WhatsApp Image 2024-05-22 at 14.22.02.jpeg" alt="https://wa.me/qr/5ZFUZ75L5EXRH1">
+        </div>
+        <a href="index.html" class="back-button">Kembali</a>
+    </div>
+</body>
+</html>
+</html>
